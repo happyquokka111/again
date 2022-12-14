@@ -41,7 +41,7 @@ function App() {
       </div> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route basename="/" element={<Home />} />
           <Route path="iterative" element={<Iterative />} />
           <Route path="pers" element={<Persona />} />
           <Route path="eye" element={<Eyetracking />} />
