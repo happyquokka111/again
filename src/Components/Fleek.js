@@ -62,9 +62,6 @@ const Fleek = () => {
             />{" "}
             <p>
               {" "}
-              To see the wireframes, make the figma full screen and click
-              through!
-              <p></p>
               <br></br>
               Above is the low fidelity prototype we created by combining all of
               our ideas from the initial sketches! We decided at first to create
@@ -148,36 +145,27 @@ const Fleek = () => {
                     width="500"
                     height="250"
                   ></img>
-                  <p>
-                  User One  
-                  </p>
-                
+                  <p>User One</p>
                 </a>
               </div>
               <div class="column">
                 <a href="https://app.usertesting.com/v/1d2e545f-15a5-4100-a08b-2171b71a78f6?encrypted_video_handle=7a67d390-b801-4d88-8ed8-4d06d2c75cc1#!/notes">
-                <img
+                  <img
                     src={require("../one.png")}
                     width="500"
                     height="250"
                   ></img>
-                  <p>
-                  User Two
-                  </p>
-                  
+                  <p>User Two</p>
                 </a>
               </div>
               <div class="column">
                 <a href="https://app.usertesting.com/v/1d2e545f-15a5-4100-a08b-2171b71a78f6?encrypted_video_handle=7a67d390-b801-4d88-8ed8-4d06d2c75cc1#!/notes">
-                <img
+                  <img
                     src={require("../one.png")}
                     width="500"
                     height="250"
                   ></img>
-                  <p>
-                  User Three
-                  </p>
-
+                  <p>User Three</p>
                 </a>
               </div>
               <h4>Findings</h4>
