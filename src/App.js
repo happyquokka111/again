@@ -10,7 +10,9 @@ import Home from "./Components/Home.js";
 import Eyetracking from "./Components/Eyetracking.js";
 import Fleek from "./Components/Fleek.js";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import { BrowswerRouter as Router, Routes, Route } from "react-router-dom";
+
 import { useRef } from "react";
 
 function App() {
@@ -39,13 +41,15 @@ function App() {
         </div>
       </div> */}
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="iterative" element={<Iterative />} />
-          <Route path="pers" element={<Persona />} />
-          <Route path="eye" element={<Eyetracking />} />
-          <Route path="fleek" element={<Fleek />} />
-        </Routes>
+        <HashRouter basename="/">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="iterative" element={<Iterative />} />
+            <Route path="pers" element={<Persona />} />
+            <Route path="eye" element={<Eyetracking />} />
+            <Route path="fleek" element={<Fleek />} />
+          </Routes>
+        </HashRouter>
       </Router>
       {/* <div className="container">
         <div ref={home} className="container" id="descript">
