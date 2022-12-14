@@ -1,0 +1,16 @@
+h3 {
+  font-family: "apparat-light", sans-serif;
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+.about {
+  text-align: center;
+}
+#im {
+  padding-top: 3%;
+}
+p {
+  padding-top: 5%;
+}

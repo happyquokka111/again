@@ -1,38 +1,66 @@
-.App {
+.container {
+  justify-items: center;
+  padding: 40px;
+  margin-top: 50px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.nav {
+  right: 5px;
+  float: right;
+  position: fixed;
+  width: -1000px;
+  z-index: 1;
+}
+.name {
+  display: inline-block;
+
+  position: fixed;
+  padding-left: 3%;
+}
+
+.header {
+  position: fixed;
+  z-index: 0;
+
+  background-color: rgba(255, 255, 255, 0.979);
+  width: 100%;
+  height: 130px;
+  top: 0px;
+  left: 0px;
+}
+#descript {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 400px;
 }
+h1 {
+  padding-top: 1%;
+  font-family: "apparat-light", sans-serif;
 
-.App-link {
-  color: #61dafb;
+  font-weight: 400;
+
+  font-style: normal;
 }
+h5 {
+  font-family: "apparat-light", sans-serif;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: 400;
+
+  font-style: normal;
+}
+h6 {
+  font-family: "apparat-light", sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+#ab {
+  background-color: rgb(252, 243, 243);
+  
+}
+#work {
+  text-align: center;
 }
