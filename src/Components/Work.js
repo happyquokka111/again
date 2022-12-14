@@ -43,8 +43,8 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/fleek">
-          <img src={require("../new.png")} width="500" height="250"></img>
+          <a href="/again/fleek">
+            <img src={require("../new.png")} width="500" height="250"></img>
           </a>
           {isHovering && (
             <div>
@@ -62,7 +62,7 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/eye">
+          <a href="/again/eye">
             <img src={require("../test.png")} width="500" height="250"></img>
           </a>
           {isHovering && (
@@ -78,7 +78,7 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/pers">
+          <a href="/again/pers">
             <div>
               <img src={require("../pers.png")} width="500" height="250"></img>
             </div>
