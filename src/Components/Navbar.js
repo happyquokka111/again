@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const { scrollToSect, home, about, work } = props;
@@ -21,9 +22,9 @@ const Navbar = (props) => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li onClick={() => scrollToSect(home)} className="nav-item active">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to="/">
               Home <span className="sr-only"></span>
-            </a>
+            </Link>
           </li>
           <li onClick={() => scrollToSect(about)} className="nav-item">
             <a className="nav-link" href="#">
