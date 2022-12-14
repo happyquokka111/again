@@ -11,7 +11,6 @@ import Eyetracking from "./Components/Eyetracking.js";
 import Fleek from "./Components/Fleek.js";
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
 import { useRef } from "react";
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
       </div> */}
       <Router>
         <Routes>
-          <Route basename="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="iterative" element={<Iterative />} />
           <Route path="pers" element={<Persona />} />
           <Route path="eye" element={<Eyetracking />} />
