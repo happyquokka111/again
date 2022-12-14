@@ -62,9 +62,9 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/eye">
+          <Link to="/eye">
             <img src={require("../test.png")} width="500" height="250"></img>
-          </a>
+          </Link>
           {isHovering && (
             <div>
               <h3>Eye Tracking</h3>
