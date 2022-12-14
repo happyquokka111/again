@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Work.css";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -22,14 +22,14 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/iterative">
+          <Link to="/iterative">
             <img
               src={require("../kara.png")}
               width="500"
               height="250"
               alt="karakare"
             ></img>
-          </a>
+          </Link>
           {isHovering && (
             <div>
               <h3>KaraKare</h3>
@@ -43,9 +43,9 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/fleek">
+          <Link to="/fleek">
             <img src={require("../new.png")} width="500" height="250"></img>
-          </a>
+          </Link>
           {isHovering && (
             <div>
               <h3>Fleek</h3>
@@ -78,11 +78,11 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="/pers">
+          <Link to="/pers">
             <div>
               <img src={require("../pers.png")} width="500" height="250"></img>
             </div>
-          </a>
+          </Link>
 
           {isHovering && (
             <div>
