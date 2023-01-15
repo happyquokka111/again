@@ -1,6 +1,11 @@
 import "./Kara.css";
+import React, { useEffect } from 'react';
 const Kara = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
+  
     <div className="Kara">
       <div className="top">
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}

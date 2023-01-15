@@ -1,7 +1,15 @@
 import "./Kara.css";
+import React, { useEffect } from 'react';
 const Persona = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
+  
     <div className="Persona">
+      <div>
+        
+      </div>
       <div className="top">
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}
 
@@ -17,10 +25,14 @@ const Persona = () => {
       </div>
       <div className="body">
         <div className="title">
+       <p>
+         
+       </p>
           <h1>Personas and Storyboarding</h1>
           <h5>A look into ordinary interfaces</h5>
         </div>
         <div class="container" id="BackStory">
+      
           <h2>Daily Routines </h2>
           <p>
             I typically do not take a closer look at the interfaces we take for

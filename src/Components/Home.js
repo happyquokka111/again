@@ -1,10 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar.js";
+import Navbar from "./NavBar.js";
 import About from "./About.js";
 import Work from "./Work.js";
-import { Link } from "react-router-dom";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useRef } from "react";
 
 function Home() {
@@ -36,7 +33,7 @@ function Home() {
         <div ref={home} className="container" id="descript">
           <h5>Hi, my name is</h5>
 
-          <h1>[First Name] [Last]</h1>
+          <h1>Natalee Amhaz</h1>
           <h6>UX Designer // Developer </h6>
         </div>
         <div ref={about} className="container" id="ab">

@@ -1,5 +1,10 @@
 import "./Kara.css";
+import React, { useEffect } from "react";
+
 const Eyetracking = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="eye">
       <div className="top">
@@ -117,15 +122,15 @@ const Eyetracking = () => {
       <div class="container" id="further">
         <h2>V. Further Exploration</h2>
         <p>
-          Some limitations were that each tester had different food preferences, so 
-          they may have moved their eye direction to what was most attractive to them personally.
-          In the future, we can average where the eyesight is directed between all subjects 
-          to get the most objective result. Using what they are most drawn to, will help me redesign
-          my page in the future to put the most useful information there.
+          Some limitations were that each tester had different food preferences,
+          so they may have moved their eye direction to what was most attractive
+          to them personally. In the future, we can average where the eyesight
+          is directed between all subjects to get the most objective result.
+          Using what they are most drawn to, will help me redesign my page in
+          the future to put the most useful information there.
         </p>
       </div>
     </div>
-    
   );
 };
 

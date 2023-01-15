@@ -1,45 +1,41 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = (props) => {
+
+const NavBar = (props) => {
   const { scrollToSect, home, about, work } = props;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light p-3">
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li onClick={() => scrollToSect(home)} className="nav-item active">
-            <Link className="nav-link" to="/">
-              Home <span className="sr-only"></span>
-            </Link>
-          </li>
-          <li onClick={() => scrollToSect(about)} className="nav-item">
-            <a className="nav-link" href="#">
-              About
+    <Navbar bg="white" expand="lg">
+   
+      <Navbar.Brand href="#home"> </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+        <li onClick={() => scrollToSect(home)} class="nav-item active">
+            <Link class="nav-link" to="/">
+              Home <span class="sr-only"></span>
+           </Link>
+        </li>
+         <li onClick={() => scrollToSect(about)} class="nav-item">
+           <a class="nav-link" href="#">
+         About
+        </a>
+        </li>
+        <li onClick={() => scrollToSect(work)} class="nav-item">
+       <a class="nav-link" href="#">
+            My Work
             </a>
           </li>
-          <li onClick={() => scrollToSect(work)} className="nav-item">
-            <a className="nav-link" href="#">
-              My Work
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          </Nav>
+        </Navbar.Collapse>
+    
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavBar;

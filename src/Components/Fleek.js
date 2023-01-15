@@ -1,8 +1,14 @@
 import "./Kara.css";
 import React from "react";
-import ReactDOM from "react-dom";
+
+import  {useEffect  }from 'react';
+
+
 
 const Fleek = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="Fleek">
       <div className="top">
