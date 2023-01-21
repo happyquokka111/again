@@ -15,7 +15,7 @@ const Work = () => {
   };
   return (
     <div className="work">
-      <h1>My Work</h1>
+      <h1>Featured Work</h1>
       <div class="row">
         <div
           onMouseOver={handleMouseOver}
