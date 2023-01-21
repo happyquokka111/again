@@ -9,8 +9,8 @@ const About = () => {
       <img id="im" src={require("../me.jpeg")} width="30%"></img>
       <p>
         I am a junior at Brown University studying Computer Science and
-        Contemplative Studies. Previously, I worked as a UX designer at Hatch. I
-        am passionate about technology and the impact it has on people's lives
+        Contemplative Studies. Previously, I worked as a Product Managaement Intern at Hatch. 
+        I am passionate about technology and the impact it has on people's lives
         and am always looking to work on new projects!
       </p>
     </div>

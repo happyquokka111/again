@@ -34,7 +34,7 @@ function Home() {
           <h5>Hi, my name is</h5>
 
           <h1>Natalee Amhaz</h1>
-          <h6>UX Designer // Developer </h6>
+          <h6>Product // Engineering </h6>
         </div>
         <div ref={about} className="container" id="ab">
           <About />
