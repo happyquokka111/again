@@ -8,11 +8,13 @@ const Naving = (props) => {
   const { scrollToSect, home, about, work } = props;
 
   return (
-    <Navbar bg="white" expand="lg">
-      <Navbar.Brand href="#home"> </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+  <ul class="navbar-nav">
           <li onClick={() => scrollToSect(home)} class="nav-item active">
             <Link class="nav-link" to="/">
               Home <span class="sr-only"></span>
@@ -28,9 +30,9 @@ const Naving = (props) => {
               My Work
             </a>
           </li>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+          </ul>
+          </div>
+          </nav>
   );
 };
 
