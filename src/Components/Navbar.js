@@ -6,7 +6,7 @@ const Navbar = (props) => {
   const { scrollToSect, home, about, work } = props;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light p-3">
+    <nav className="navbar navbar-expand-lg  p-3">
       <button
         className="navbar-toggler"
         type="button"
