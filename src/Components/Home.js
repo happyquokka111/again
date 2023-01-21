@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./NavBar.js";
+import Navbar from "./Naving.js";
 import About from "./About.js";
 import Work from "./Work.js";
 import { useRef } from "react";
