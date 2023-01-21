@@ -1,8 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+
 
 const Naving = (props) => {
   const { scrollToSect, home, about, work } = props;
@@ -21,14 +20,14 @@ const Naving = (props) => {
             </Link>
           </li>
           <li onClick={() => scrollToSect(about)} class="nav-item">
-            <a class="nav-link" href="#">
+            <Link class="nav-link" href="#">
               About
-            </a>
+            </Link>
           </li>
           <li onClick={() => scrollToSect(work)} class="nav-item">
-            <a class="nav-link" href="#">
+            <Link class="nav-link" href="#">
               My Work
-            </a>
+            </Link>
           </li>
           </ul>
           </div>
