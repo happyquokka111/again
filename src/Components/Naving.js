@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 
 const Naving = (props) => {
-  const { scrollToSect, home, about, work } = props;
+  const { scrollToSect, home, about, work, contact } = props;
 
   return (
     <Navbar collapseOnSelect expand="sm">
@@ -26,6 +26,11 @@ const Naving = (props) => {
           <li onClick={() => scrollToSect(work)} className="nav-item">
             <Nav.Link className="nav-link" href="#">
               Featured Work
+            </Nav.Link>
+          </li>
+          <li onClick={() => scrollToSect(contact)} className="nav-item">
+            <Nav.Link className="nav-link" href="#">
+              Contact Me
             </Nav.Link>
           </li>
         </Nav>

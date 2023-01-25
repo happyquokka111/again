@@ -16,11 +16,11 @@ const Work = () => {
   return (
     <div className="work">
       <h1>Featured Work</h1>
-      <div class="row">
+    
         <div
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          class="col-8 col-sm-6"
+          class="box box1"
           id="box"
         >
           <Link to="/iterative">
@@ -41,7 +41,7 @@ const Work = () => {
         <div
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          class="col-8 col-sm-6"
+          class="box box2"
           id="box"
         >
           <Link to="/fleek">
@@ -55,12 +55,12 @@ const Work = () => {
           )}
         </div>
 
-        <div class="w-100"></div>
+  
 
         <div
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          class="col-8 col-sm-6"
+          class="box box3"
           id="box"
         >
           <Link to="/eye">
@@ -76,7 +76,7 @@ const Work = () => {
         <div
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-          class="col-8 col-sm-6"
+          class="box box4"
           id="box"
         >
           <Link to="/pers">
@@ -92,7 +92,7 @@ const Work = () => {
             </div>
           )}
         </div>
-      </div>
+ 
     </div>
   );
 };
