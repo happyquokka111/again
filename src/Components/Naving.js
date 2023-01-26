@@ -28,11 +28,11 @@ const Naving = (props) => {
               Featured Work
             </Nav.Link>
           </li>
-          <li onClick={() => scrollToSect(contact)} className="nav-item">
+          {/* <li onClick={() => scrollToSect(contact)} className="nav-item">
             <Nav.Link className="nav-link" href="#">
               Contact Me
             </Nav.Link>
-          </li>
+          </li> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
