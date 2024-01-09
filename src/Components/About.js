@@ -8,8 +8,8 @@ const About = () => {
 
       <img id="im" src={require("../me.jpeg")} width="30%"></img>
       <p>
-        I am a junior at Brown University studying Computer Science and
-        Contemplative Studies. Previously, I worked as a Product Management Intern at Hatch. 
+        I am a senior at Brown University double majoring in Computer Science and
+        Contemplative Studies (a major that consists of neuroscience, psychology, and philosophy courses). Previously, I worked as a Software Engineer Intern at Zocdoc. 
         I am passionate about technology and the impact it has on people's lives
         and am always looking to work on new projects!
       </p>

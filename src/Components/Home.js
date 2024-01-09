@@ -5,9 +5,11 @@ import Work from "./Work.js";
 import { useRef } from "react";
 
 function Home() {
+  //get height of navbar
+  const navHeight = document.querySelector(".nav").offsetHeight;
   const scrollToSect = (el) => {
     window.scrollTo({
-      top: el.current.offsetTop,
+      top: el.current.offsetTop - navHeight,
       behavior: "smooth",
     });
   };
