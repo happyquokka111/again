@@ -1,5 +1,6 @@
 import "./Kara.css";
 import React, { useEffect } from "react";
+import "./Eyetracking.css";
 
 const Eyetracking = () => {
   useEffect(() => {
@@ -9,7 +10,6 @@ const Eyetracking = () => {
     <div className="eye">
       <div className="top">
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}
-
         <div className="nav">
           <ul className="navbar-nav">
             <li className="nav-item active">

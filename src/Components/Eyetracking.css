@@ -1,0 +1,12 @@
+.eye {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    order: 1;
+}
+
+.body {
+    order: 2;
+}
