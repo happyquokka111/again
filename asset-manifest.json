@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/again/static/css/main.003dc8cc.css",
-    "main.js": "/again/static/js/main.7d61d239.js",
-    "static/media/me.jpeg": "/again/static/media/me.9b4012125c798cb4c4dd.jpeg",
+    "main.css": "/again/static/css/main.cbb08b61.css",
+    "main.js": "/again/static/js/main.948b9afd.js",
     "static/media/heatmap-one.png": "/again/static/media/heatmap-one.1026f36285158cf0a7d0.png",
     "static/media/figma-one.png": "/again/static/media/figma-one.e91570b6a026d7626db8.png",
+    "static/media/me.png": "/again/static/media/me.dbe4e816c8d4fdc50a1f.png",
     "static/media/first-wire.png": "/again/static/media/first-wire.02069164dd7bec8a8220.png",
     "static/media/PersonaOne.jpg": "/again/static/media/PersonaOne.f7d879e351f083150455.jpg",
     "static/media/Persona part 2.jpg": "/again/static/media/Persona part 2.3b9801822e3443c9a54c.jpg",
@@ -24,11 +24,11 @@
     "static/media/new.png": "/again/static/media/new.137cbb26b96574eb21ef.png",
     "static/media/logo2.png": "/again/static/media/logo2.a53d4f382ee61ca67dfd.png",
     "index.html": "/again/index.html",
-    "main.003dc8cc.css.map": "/again/static/css/main.003dc8cc.css.map",
-    "main.7d61d239.js.map": "/again/static/js/main.7d61d239.js.map"
+    "main.cbb08b61.css.map": "/again/static/css/main.cbb08b61.css.map",
+    "main.948b9afd.js.map": "/again/static/js/main.948b9afd.js.map"
   },
   "entrypoints": [
-    "static/css/main.003dc8cc.css",
-    "static/js/main.7d61d239.js"
+    "static/css/main.cbb08b61.css",
+    "static/js/main.948b9afd.js"
   ]
 }
