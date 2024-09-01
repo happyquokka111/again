@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about">
       <h1>About Me</h1>
-      <img id="im" src={require("../me.jpeg")} width="30%"></img>
+      <div className="image-container">  <img className = "profile-image" id="im" src={require("../me.png")} ></img></div>
       <p>
         I am a Brown University alum with bachelor degrees in Computer Science and
         Contemplative Studies (a major that consists of neuroscience, psychology, and philosophy courses). I am a NY based software engineer passionate about technology and the impact it has on people's lives.

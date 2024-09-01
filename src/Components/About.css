@@ -292,3 +292,21 @@ p {
 .product-engineering:hover .dot {
   transform: scale(1.5);
 }
+.image-container {
+  width: 300px; /* Adjust size as needed */
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%; /* Adjust based on the zoom level */
+  height: auto;
+  transform: translate(-45%, -50%) scale(1.25); /* Center and zoom in the image */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
