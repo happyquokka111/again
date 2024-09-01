@@ -1,98 +1,44 @@
-import React from "react";
-import { useState } from "react";
-
-import "./Work.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import karaImage from "../kara.png";
+import newImage from "../new.png";
+import testImage from "../test.png";
+import persImage from "../pers.png";
+import "./Work.css";
 
 const Work = () => {
-  const [isHovering, setIsHovering] = useState(false);
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
+  const [hoveredBox, setHoveredBox] = useState(null);
 
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+  const projects = [
+    { id: 'karakare', image: karaImage, title: 'KaraKare', tech: 'HTML, JavaScript, and Firebase', link: '/iterative' },
+    { id: 'fleek', image: newImage, title: 'Fleek', tech: 'Figma', link: '/fleek' },
+    { id: 'eyetracking', image: testImage, title: 'Eye Tracking', tech: 'Figma and Python', link: '/eye' },
+    { id: 'personas', image: persImage, title: 'Personas and Storyboarding', tech: 'Figma', link: '/pers' }
+  ];
+
   return (
     <div className="work">
       <h1>Featured Work</h1>
-    
-        <div
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          class="box box1"
-          id="box"
-        >
-          <Link to="/iterative">
-            <img
-              src={require("../kara.png")}
-              width="500"
-              height="250"
-              alt="karakare"
-            ></img>
-          </Link>
-          {isHovering && (
-            <div>
-              <h3>KaraKare</h3>
-              <h6>HTML, JavaScript, and Firebase</h6>
-            </div>
-          )}
-        </div>
-        <div
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          class="box box2"
-          id="box"
-        >
-          <Link to="/fleek">
-            <img src={require("../new.png")} width="500" height="250"></img>
-          </Link>
-          {isHovering && (
-            <div>
-              <h3>Fleek</h3>
-              <h6>Figma</h6>
-            </div>
-          )}
-        </div>
-
-  
-
-        <div
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          class="box box3"
-          id="box"
-        >
-          <Link to="/eye">
-            <img src={require("../test.png")} width="500" height="250"></img>
-          </Link>
-          {isHovering && (
-            <div>
-              <h3>Eye Tracking</h3>
-              <h6>Figma and Python</h6>
-            </div>
-          )}
-        </div>
-        <div
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-          class="box box4"
-          id="box"
-        >
-          <Link to="/pers">
-            <div>
-              <img src={require("../pers.png")} width="500" height="250"></img>
-            </div>
-          </Link>
-
-          {isHovering && (
-            <div>
-              <h3>Personas and Storyboarding</h3>
-              <h6>Figma</h6>
-            </div>
-          )}
-        </div>
- 
+      <div className="grid-container">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="grid-item"
+            onMouseOver={() => setHoveredBox(project.id)}
+            onMouseOut={() => setHoveredBox(null)}
+          >
+            <Link to={project.link}>
+              <img src={project.image} alt={project.title} />
+            </Link>
+            {hoveredBox === project.id && (
+              <div className="hover-info">
+                <h3>{project.title}</h3>
+                <h6>{project.tech}</h6>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

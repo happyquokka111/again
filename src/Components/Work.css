@@ -1,72 +1,39 @@
-#box {
-  padding: 5%;
+.work {
+  padding: 20px;
 }
-#BackStory {
-  width: 100%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  background-color: rgba(252, 243, 243, 0.37);
-  display: flex;
+.grid-item {
   position: relative;
-  flex-direction: column;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
-  padding-top: 60px;
-  padding: 40px;
-  padding-bottom: 40px;
-  
+  text-align: center;
 }
 
-.back {
+.grid-item img {
   width: 100%;
-
-  background-color: rgba(252, 243, 243, 0.37);
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
-  padding-top: 60px;
-  padding: 40px;
-  padding-bottom: 40px;
+  height: auto;
+  object-fit: cover;
 }
 
-p {
-  padding-top: 3%;
-  font-family: "apparat-light", sans-serif;
+.hover-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
 }
 
-h4 {
-  font-family: "apparat-light", sans-serif;
-  font-weight: 800;
-  padding-bottom: 5%;
-  padding-top: 3%;
+.hover-info h3, .hover-info h6 {
+  margin: 0;
 }
-.column {
-  float: left;
-  width: 50%;
-  padding: 3px;
+h1{
+  text-align: center;
+  padding-top: 5%;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.grid2x2 {
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
-  justify-content: center;
-  flex-direction: column;
-}
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.box { margin: 10px; }

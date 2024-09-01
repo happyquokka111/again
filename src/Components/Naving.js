@@ -1,10 +1,8 @@
 import React from "react";
-import "./Navbar.css";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 
 const Naving = (props) => {
   const { scrollToSect, home, about, work, contact } = props;
-
   return (
     <Navbar collapseOnSelect expand="sm">
       <Navbar.Toggle

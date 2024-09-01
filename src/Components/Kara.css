@@ -1,39 +1,140 @@
-#pls {
-  position: fixed;
-  right: 50px;
-  top: 20px;
+Base styles
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.title {
-  padding-left: 70px;
-}
-.container2 {
-  padding: 60px;
+.Kara {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.final {
-  text-align: center;
-  padding-top: 5%;
-}
-#further {
-  width: 100%;
 
-  background-color: rgba(252, 243, 243, 0.37);
+.name {
+  width: 50px;
+}
+
+.nav {
   display: flex;
-  position: relative;
-  flex-direction: column;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
-  padding-top: 60px;
-  padding: 40px;
-  padding-bottom: 40px;
-}
-#wash {
-  text-align: center;
-}
-.fig {
   align-items: center;
 }
-a {
+
+.nav-item {
+  display: inline-block;
+}
+
+#pls {
   text-decoration: none;
-  color: black;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+#pls:hover {
+  color: #35393d;
+}
+
+/* Title section */
+.title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.title h1 {
+  padding-top: 10%;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.title h5 {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Content sections */
+.container, .container2 {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2, .container2 h2 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #f8dada;
+  padding-bottom: 10px;
+}
+
+/* Image layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  min-width: 300px;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Final section */
+.final {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.final img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.final img:hover {
+  transform: scale(1.05);
+}
+
+/* Further exploration section */
+/* SHOULD BE AT BOTTON OF PAGE */
+#further {
+  background-color: rgba(252, 243, 243, 0.37);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+  
+  .container, .container2 {
+    padding: 20px;
+  }
 }

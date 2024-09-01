@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="App">
       <div className="top">
-        {<img className="name" src={require("../logo2.png")} width="7%"></img>}
+        {<img className="name" src={require("../logo2.png")}></img>}
 
         <div className="nav">
           <Navbar
@@ -37,7 +37,19 @@ function Home() {
           <h5>Hi, my name is</h5>
 
           <h1>Natalee Amhaz</h1>
-          <h6>Product // Engineering </h6>
+          <div class="product-engineering">
+  <span>product</span>
+  <div class="dot"></div>
+  <span>engineering</span>
+  <div class="dot"></div>
+  <span>storytelling</span>
+</div>
+          <div id="contact" class="contact-icons">
+  <a href="https://www.linkedin.com/in/nataleeamhaz" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/nataleeamhaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  <a href="mailto:nataleeamhaz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  <a href="https://twitter.com/nataleeamhaz" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+</div>
         </div>
         <div ref={about} className="container" id="ab">
           <About />

@@ -3,8 +3,6 @@ import React from "react";
 
 import  {useEffect  }from 'react';
 
-
-
 const Fleek = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -12,7 +10,9 @@ const Fleek = () => {
   return (
     <div className="Fleek">
       <div className="top">
+        {/* make logo big */}
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}
+        {/* make nav bar */}
 
         <div className="nav">
           <ul className="navbar-nav">
