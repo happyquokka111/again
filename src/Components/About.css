@@ -2,7 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "apparat-light", Arial, sans-serif;
+  font-family: "work-sans", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -88,21 +88,21 @@ p {
 #descript h5, .container h5, .container2 h5 {
   font-size: 1.2em;
   margin-bottom: 10px;
-  font-family: "apparat-light", Arial, sans-serif;
+  font-family: "work-sans", Arial, sans-serif;
   font-weight: normal;
 }
 
 #descript h1, .container h1, .container2 h1 {
   font-size: 3.5em;
   margin: 20px 0;
-  font-family: "apparat-light", Arial, sans-serif;
+  font-family: "work-sans", Arial, sans-serif;
   font-weight: normal;
 }
 
 #descript h6, .container h6, .container2 h6 {
   font-size: 1.5em;
   margin-top: 10px;
-  font-family: "apparat-light", Arial, sans-serif;
+  font-family: "work-sans", Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -121,7 +121,8 @@ p {
   color: #333;
   border-bottom: 2px solid #f8dada;
   padding-bottom: 10px;
-  font-family: "apparat-light", Arial, sans-serif;
+  padding-top: 2%;
+  font-family: "work-sans", Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -129,6 +130,46 @@ p {
 .about {
   text-align: center;
   padding-top: 20px;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.image-container {
+  width: 300px; /* Adjust size as needed */
+  height: 300px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%; /* Adjust based on the zoom level */
+  height: auto;
+  transform: translate(-50%, -50%) scale(1.2); /* Center and zoom in the image */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.about-text {
+  max-width: 600px; /* Adjust size as needed */
+}
+
+.about-text p {
+  margin: 0;
+  padding-top: 10%;
 }
 
 /* Work section */
@@ -181,7 +222,7 @@ p {
 
 .hover-info h3, .hover-info h6 {
   margin: 0;
-  font-family: "apparat-light", Arial, sans-serif;
+  font-family: "work-sans", Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -217,7 +258,6 @@ p {
   color: #1DA1F2;
 }
 
-
 /* Responsive design */
 @media (max-width: 768px) {
   .top {
@@ -239,6 +279,9 @@ p {
   .nav-item {
     margin-left: 15px;
   }
+  #about-text{
+    padding-top: 5%;
+  } 
 
   #descript, .container, .container2 {
     padding-top: 30px;
@@ -260,6 +303,7 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
 .product-engineering {
   display: flex;
   align-items: center;
@@ -291,22 +335,4 @@ p {
 
 .product-engineering:hover .dot {
   transform: scale(1.5);
-}
-.image-container {
-  width: 300px; /* Adjust size as needed */
-  height: 300px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 50%;
-  position: relative;
-}
-
-.profile-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150%; /* Adjust based on the zoom level */
-  height: auto;
-  transform: translate(-45%, -50%) scale(1.25); /* Center and zoom in the image */
-  object-fit: cover; /* Ensures the image covers the entire container */
 }

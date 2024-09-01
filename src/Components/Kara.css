@@ -2,7 +2,7 @@ Base styles
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+ font-family:  "_Work_Sans_1fc36d, __Work_Sans_Fallback_1fc36d";
 }
 
 .Kara {
@@ -123,7 +123,7 @@ figcaption {
 #further {
   background-color: rgba(252, 243, 243, 0.37);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-  padding: 40px;
+
   border-radius: 8px;
 
 }
