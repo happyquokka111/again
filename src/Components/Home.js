@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="App">
       <div className="top">
-        {<img className="name" src={`${process.env.PUBLIC_URL}${require("../logo2.png")}`}></img>}
+        {<img className="name" src={require("../logo2.png")}></img>}
 
         <div className="nav">
           <Navbar

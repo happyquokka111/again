@@ -11,7 +11,7 @@ const Fleek = () => {
     <div className="Fleek">
       <div className="top">
         {/* make logo big */}
-        {<img className="name" src={`${process.env.PUBLIC_URL}${require("../logo2.png")}`}width="7%"></img>}
+        {<img className="name" src={require("../logo2.png")} width="7%"></img>}
         {/* make nav bar */}
 
         <div className="nav">
