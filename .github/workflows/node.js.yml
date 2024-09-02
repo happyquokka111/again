@@ -42,3 +42,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+    - name: Create CNAME File
+      run: echo "nataleeamhaz.com" > build/CNAME
