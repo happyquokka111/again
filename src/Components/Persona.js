@@ -11,7 +11,7 @@ const Persona = () => {
         
       </div>
       <div className="top">
-        {<img className="name" src={require("../logo2.png")} width="7%"></img>}
+        {<img className="name" src={`${process.env.PUBLIC_URL}${require("../logo2.png")}`} width="7%"></img>}
 
         <div className="nav">
           <ul className="navbar-nav">

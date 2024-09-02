@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="title">About Me</h1>
       <div className="content">
         <div className="image-container">
-          <img className="profile-image" src={require("../me.png")} alt="Profile" width={"30%"} />
+          <img className="profile-image" src={`${process.env.PUBLIC_URL}${require("../me.png")}`} alt="Profile" width={"30%"} />
         </div>
         <div className="about-text">
           <p>
