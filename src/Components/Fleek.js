@@ -17,7 +17,7 @@ const Fleek = () => {
         <div className="nav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="/again/" id="pls">
+              <a className="nav-link" href="/" id="pls">
                 Home <span className="sr-only"></span>
               </a>
             </li>
