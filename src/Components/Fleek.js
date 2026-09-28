@@ -2,6 +2,7 @@ import "./Kara.css";
 import React from "react";
 
 import  {useEffect  }from 'react';
+import CaseStudyNav from "./CaseStudyNav.js";
 
 const Fleek = () => {
   useEffect(() => {
@@ -15,19 +16,12 @@ const Fleek = () => {
         {/* make nav bar */}
 
         <div className="nav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="/" id="pls">
-                Home <span className="sr-only"></span>
-              </a>
-            </li>
-          </ul>
+          <CaseStudyNav />
         </div>
       </div>
       <div className="body">
         <div className="title">
-          <h1>KaraKare</h1>
-          <h5>A webapp for refugee camps</h5>
+          <h1>Fleek</h1>
         </div>
         <div class="container" id="BackStory">
           <h2>Fleek </h2>
@@ -62,6 +56,7 @@ const Fleek = () => {
           <div class="back">
             <h2>II. Low Fidelity Wireframes</h2>
             <iframe
+              width="800"
               height="450"
               src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7Ici04r5Eis32N0W7683IF%2Ffleek%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1"
               allowfullscreen=""
@@ -120,19 +115,22 @@ const Fleek = () => {
               For the final step in the project, we sent our prototype to a site
               that pays people to user test interfaces and records them and
               their feedback. Here is what we asked them:
-              <p></p>BLURB: This is not an actual website but an interactive
-              mockup made on prototyping software. You are a vintage shop called
-              Nostalgia and you are buying wholesale vintage Harley Davidson
-              t-shirts for your shop. This website allows you to find businesses
-              that sell vintage wholesale products and buy their products.{" "}
-              <p></p>
-              TASKS: Search for vintage tops Filter for the Harley Davidson
-              brand and select the Harley Tees Bundle Add the Harley Tees Bundle
-              to your cart{" "}
-              <h4>
-                <p></p>
-                QUESTIONS:
-              </h4>{" "}
+            </p>
+            <p>
+              <strong>BLURB:</strong> This is not an actual website but an
+              interactive mockup made on prototyping software. You are a
+              vintage shop called Nostalgia and you are buying wholesale
+              vintage Harley Davidson t-shirts for your shop. This website
+              allows you to find businesses that sell vintage wholesale
+              products and buy their products.
+            </p>
+            <p>
+              <strong>TASKS:</strong> Search for vintage tops Filter for the
+              Harley Davidson brand and select the Harley Tees Bundle Add the
+              Harley Tees Bundle to your cart
+            </p>
+            <h4>QUESTIONS:</h4>
+            <p>
               On a scale from 1 to 5, how easy was it to know an item was added
               to the cart? (1 = very difficult, 5 = very easy) <br></br>On a
               scale from 1 to 5, how useful is the chat function to the
@@ -148,8 +146,7 @@ const Fleek = () => {
                 <a href="https://app.usertesting.com/v/5e8561d5-afa7-48d5-bfa4-805188ecd267?encrypted_video_handle=12a75003-e498-41f2-8be2-d1a1ea7fa506#!/notes">
                   <img
                     src={require("../one.png")}
-                    width="500"
-                    height="250"
+                    width="100%"
                   ></img>
                   <p>User One</p>
                 </a>
@@ -158,8 +155,7 @@ const Fleek = () => {
                 <a href="https://app.usertesting.com/v/1d2e545f-15a5-4100-a08b-2171b71a78f6?encrypted_video_handle=7a67d390-b801-4d88-8ed8-4d06d2c75cc1#!/notes">
                   <img
                     src={require("../one.png")}
-                    width="500"
-                    height="250"
+                    width="100%"
                   ></img>
                   <p>User Two</p>
                 </a>
@@ -168,38 +164,37 @@ const Fleek = () => {
                 <a href="https://app.usertesting.com/v/1d2e545f-15a5-4100-a08b-2171b71a78f6?encrypted_video_handle=7a67d390-b801-4d88-8ed8-4d06d2c75cc1#!/notes">
                   <img
                     src={require("../one.png")}
-                    width="500"
-                    height="250"
+                    width="100%"
                   ></img>
                   <p>User Three</p>
                 </a>
               </div>
-              <h4>Findings</h4>
-              <p>
-                The overall task we gave users was to shop for a specific item
-                bundle and add it to their cart, which we split into the
-                following subtasks: “search vintage tops, filter for the Harley
-                Davidson brand and select the Harley Tees Bundle, then add the
-                bundle to your cart.” The users were successful for each task
-                and generally described the interface as “easy to use and
-                navigate”. While most users did not face many issues, a point of
-                error/confusion was the quantity vs amount of pieces shown when
-                shopping. Specifically, we ask the user to add a bundle to their
-                cart, which includes 20 pieces, but the quantity is listed as 1
-                because each bundle is 20 pieces. Users found that it might be a
-                bit confusing to list the quantity as 1 instead of 20. Users
-                were able to complete the tasks successfully and pretty
-                efficiently, though one user was unsure of completing a task
-                because for our search function, the user simply clicks the
-                search bar, instead of typing the actual query. Potential
-                interface changes we could make are clearly indicating that each
-                bundle includes X pieces, so we can put conversions for the
-                quantities. For example, if each bundle includes 20 pieces,
-                picking quantity 1 will show (20pc), quantity 2 (40pc), etc. As
-                well, we could have live time assistance with an employee
-                through our chat feature, which one user was hoping to see.
-              </p>
             </div>
+            <h4>Findings</h4>
+            <p>
+              The overall task we gave users was to shop for a specific item
+              bundle and add it to their cart, which we split into the
+              following subtasks: “search vintage tops, filter for the Harley
+              Davidson brand and select the Harley Tees Bundle, then add the
+              bundle to your cart.” The users were successful for each task
+              and generally described the interface as “easy to use and
+              navigate”. While most users did not face many issues, a point of
+              error/confusion was the quantity vs amount of pieces shown when
+              shopping. Specifically, we ask the user to add a bundle to their
+              cart, which includes 20 pieces, but the quantity is listed as 1
+              because each bundle is 20 pieces. Users found that it might be a
+              bit confusing to list the quantity as 1 instead of 20. Users
+              were able to complete the tasks successfully and pretty
+              efficiently, though one user was unsure of completing a task
+              because for our search function, the user simply clicks the
+              search bar, instead of typing the actual query. Potential
+              interface changes we could make are clearly indicating that each
+              bundle includes X pieces, so we can put conversions for the
+              quantities. For example, if each bundle includes 20 pieces,
+              picking quantity 1 will show (20pc), quantity 2 (40pc), etc. As
+              well, we could have live time assistance with an employee
+              through our chat feature, which one user was hoping to see.
+            </p>
           </div>
         </div>
       </div>

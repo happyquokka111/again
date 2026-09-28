@@ -1,6 +1,6 @@
 import "./Kara.css";
 import React, { useEffect } from "react";
-import "./Eyetracking.css";
+import CaseStudyNav from "./CaseStudyNav.js";
 
 const Eyetracking = () => {
   useEffect(() => {
@@ -11,19 +11,12 @@ const Eyetracking = () => {
       <div className="top">
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}
         <div className="nav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="/" id="pls">
-                Home <span className="sr-only"></span>
-              </a>
-            </li>
-          </ul>
+          <CaseStudyNav />
         </div>
       </div>
       <div className="body">
         <div className="title">
           <h1>Eyetracking</h1>
-          <h5></h5>
         </div>
         <div class="container" id="BackStory">
           <h2>Improving User Experience </h2>
@@ -58,15 +51,12 @@ const Eyetracking = () => {
           <div class="back">
             <div class="row">
               <div class="column">
-                <div class="fig">
-                  <h5>Figma One</h5>
-
-                  <img
-                    src={require("../figma-one.png")}
-                    alt="journey"
-                    width="100%"
-                  ></img>
-                </div>
+                <h5>Figma One</h5>
+                <img
+                  src={require("../figma-one.png")}
+                  alt="journey"
+                  width="100%"
+                ></img>
               </div>
 
               <div class="column">
@@ -109,7 +99,6 @@ const Eyetracking = () => {
           <h2>IV. Findings</h2>
           <div class="final">
             <p>
-              {" "}
               We found that, the eye tracking shape in Version A and Version B
               was similar to what we had thought but the testers never looked at
               the order button. Also, the tester's eyes were more focused on one

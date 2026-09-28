@@ -1,5 +1,6 @@
 import "./Kara.css";
 import React, { useEffect } from 'react';
+import CaseStudyNav from "./CaseStudyNav.js";
 const Kara = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -11,13 +12,7 @@ const Kara = () => {
         {<img className="name" src={require("../logo2.png")} width="7%"></img>}
 
         <div className="nav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="/" id="pls">
-                Home <span className="sr-only"></span>
-              </a>
-            </li>
-          </ul>
+          <CaseStudyNav />
         </div>
       </div>
       <div className="body">
@@ -48,7 +43,7 @@ const Kara = () => {
         </div>
 
         <div class="container2" id="initial">
-          <h2> I. Initial Process </h2>
+          <h2>I. Initial Process</h2>
           <div class="row">
             <div class="column">
               <figure>
@@ -96,15 +91,13 @@ const Kara = () => {
           </div>
         </div>
         <div class="container2" id="front">
-          <h2>III. Front </h2>
+          <h2>III. Front</h2>
           <div class="row">
             <div class="column">
               <h5>Manager Side</h5>
 
               <img src={require("../appt.png")} alt="journey" width="80%"></img>
             </div>
-          </div>
-          <div class="row">
             <div class="column">
               <h5>Refugee Side</h5>
               <img

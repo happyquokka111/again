@@ -2,7 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: "work-sans", Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -43,8 +43,8 @@ p {
 }
 
 .name {
-  width: 100px;
-  height: auto;
+  height: 48px;
+  width: auto;
   margin-left: 30px;
 }
 
@@ -107,7 +107,7 @@ p {
 /* Content sections */
 .container, .container2 {
   margin: 40px auto;
-  padding: 0px 30px 40px;
+  padding: 30px 30px 40px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -127,6 +127,23 @@ p {
 .about {
   text-align: center;
   padding-top: 20px;
+}
+
+.about .content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about .image-container {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.about .about-text {
+  text-align: left;
 }
 
 /* Work section */
@@ -218,6 +235,15 @@ p {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .about .content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .about .about-text {
+    text-align: center;
+  }
+
   .top {
     flex-direction: column;
     height: auto;
@@ -227,7 +253,8 @@ p {
   .name {
     margin-left: 0;
     margin-bottom: 10px;
-    width: 80px;
+    height: 40px;
+    width: auto;
   }
 
   .nav {
@@ -300,11 +327,7 @@ p {
 }
 
 .profile-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150%; /* Adjust based on the zoom level */
-  height: auto;
-  transform: translate(-45%, -50%) scale(1.2); /* Center and zoom in the image */
-  object-fit: cover; /* Ensures the image covers the entire container */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Show the whole photo inside the circle */
 }

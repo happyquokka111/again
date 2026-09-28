@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div className="work">
-      <h1>Featured Work</h1>
+      <h1>Featured work</h1>
       <div className="grid-container">
         {projects.map((project) => (
           <div

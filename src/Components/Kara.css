@@ -1,11 +1,11 @@
-Base styles
+/* Base styles */
 body, html {
   margin: 0;
   padding: 0;
- font-family:  "_Work_Sans_1fc36d, __Work_Sans_Fallback_1fc36d";
+  font-family: "Work Sans", Arial, sans-serif;
 }
 
-.Kara {
+.Kara, .Fleek, .Persona, .eye {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -13,7 +13,8 @@ body, html {
 
 
 .name {
-  width: 50px;
+  height: 48px;
+  width: auto;
 }
 
 .nav {
@@ -23,18 +24,6 @@ body, html {
 
 .nav-item {
   display: inline-block;
-}
-
-#pls {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: color 0.3s ease;
-}
-
-#pls:hover {
-  color: #35393d;
 }
 
 /* Title section */
@@ -69,6 +58,30 @@ body, html {
   color: #333;
   border-bottom: 2px solid #f8dada;
   padding-bottom: 10px;
+}
+
+/* Body text (case-study pages only) */
+:is(.Kara, .Fleek, .Persona, .eye) :is(.container, .container2) p {
+  justify-self: stretch;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+/* Intro summary sentence, set apart as a callout */
+:is(.Kara, .Fleek, .Persona, .eye) #BackStory h4 {
+  justify-self: stretch;
+  margin: 28px 0 0;
+  padding: 18px 22px;
+  background-color: #fdf1f1;
+  border-left: 4px solid #eeb8b6;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
 }
 
 /* Image layout */

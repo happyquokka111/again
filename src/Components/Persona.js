@@ -1,5 +1,6 @@
 import "./Kara.css";
 import React, { useEffect } from 'react';
+import CaseStudyNav from "./CaseStudyNav.js";
 const Persona = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -7,27 +8,15 @@ const Persona = () => {
   return (
   
     <div className="Persona">
-      <div>
-        
-      </div>
       <div className="top">
         {<img className="name" src={`${process.env.PUBLIC_URL}${require("../logo2.png")}`} width="7%"></img>}
 
         <div className="nav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link" href="/" id="pls">
-                Home <span className="sr-only"></span>
-              </a>
-            </li>
-          </ul>
+          <CaseStudyNav />
         </div>
       </div>
       <div className="body">
         <div className="title">
-       <p>
-         
-       </p>
           <h1>Personas and Storyboarding</h1>
           <h5>A look into ordinary interfaces</h5>
         </div>
@@ -175,7 +164,6 @@ const Persona = () => {
                 quickly enough because she has to use it at a fast pace.{" "}
               </p>
             </div>
-            <br></br>
             <div class="column">
               <h4>Persona Two</h4>
               <img src={require("../Persona part 2.jpg")} width="100%"></img>
